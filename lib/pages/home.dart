@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   static List<Widget> _pages = [
     const HomeScreen(),
     const FormularioPage(), // Formulario 1
-    FormularioPage2(), // Formulario 2
+    const FormularioPage2(), // Formulario 2
     FormularioPage3(), // Formulario 3
     FormularioPage4(), // Formulario 4
     FormularioPage5(), // Formulario 5

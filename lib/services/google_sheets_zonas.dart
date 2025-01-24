@@ -12,7 +12,7 @@ class GoogleSheetsService {
   }) async {
     try {
       final response = await http.post(
-        Uri.parse(Config.urlScriptOT),
+        Uri.parse(scriptZonas.urlScriptZonas),
         headers: {
           "Content-Type": "application/json",
         },
@@ -38,7 +38,8 @@ class GoogleSheetsService {
   static Future<List?> obtenerRegistros() async {
     try {
       final response = await http.get(
-        Uri.parse(Config.urlScriptOT), // Usar URL desde la configuración
+        Uri.parse(
+            scriptZonas.urlScriptZonas), // Usar URL desde la configuración
       );
 
       if (response.statusCode == 200) {
